@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiénes Somos | Alisof Vision</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --morado: #29235C;
+      --magenta: #B61077;
+      --gris: #fde2ef;
+      --blanco: #FFFFFF;
+    }
+    body {
+      background-color: var(--gris);
+      color: var(--morado);
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="bg-white shadow-md fixed w-full top-0 z-50">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="LOGO 50 X 50_page-0001.jpg" alt="Logo Alisof Vision" class="h-10 w-auto">
+      <span class="font-semibold text-lg text-[var(--magenta)] hidden sm:inline">Alisof Vision</span>
+    </a>
+
+    <ul class="hidden md:flex gap-8 font-medium">
+      <li><a href="index.html" class="hover:text-[var(--magenta)]">Inicio</a></li>
+      <li><a href="QuienesSomos.html" class="hover:text-[var(--magenta)]">Nosotros</a></li>
+      <li><a href="servicios.html" class="hover:text-[var(--magenta)]">Servicios</a></li>
+      <li><a href="contacto.html" class="hover:text-[var(--magenta)]">Contacto</a></li>
+    </ul>
+
+    <button id="menu-btn" class="md:hidden text-[var(--magenta)]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden bg-white md:hidden border-t">
+    <ul class="flex flex-col items-center gap-4 py-4 font-medium">
+      <li><a href="index.html" class="hover:text-[var(--magenta)]">Inicio</a></li>
+      <li><a href="QuienesSomos.html" class="hover:text-[var(--magenta)]">Nosotros</a></li>
+      <li><a href="servicios.html" class="hover:text-[var(--magenta)]">Servicios</a></li>
+      <li><a href="contacto.html" class="hover:text-[var(--magenta)]">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- HERO -->
+<section class="pt-28 pb-16 text-center bg-gradient-to-r from-[var(--morado)] to-[var(--magenta)] text-white">
+  <div class="px-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Quiénes Somos</h1>
+    <p class="max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+      Impulsamos a las marcas y emprendimientos a destacar en el mundo digital creando contenidos estratégicos y auténticos que fortalezcan su identidad y generen conexión real con sus audiencias.
+    </p>
+  </div>
+</section>
+
+<!-- PRESENTACIÓN -->
+<section class="py-16 bg-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-[var(--magenta)] mb-6">Nuestra Esencia</h2>
+    <p class="text-base md:text-lg leading-relaxed text-gray-600">
+      En <strong>Alisof Vision</strong> somos un equipo joven y creativo apasionado por el diseño digital y la comunicación estratégica. Transformamos ideas en contenido visual que transmite confianza, personalidad y valor, ayudando a las marcas a construir una identidad sólida y auténtica.
+    </p>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section class="py-20 bg-[var(--gris)] text-center">
+  <h2 class="text-3xl font-bold text-[var(--magenta)] mb-10">Nuestro Equipo</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto px-6">
+    <div class="bg-white rounded-2xl shadow-md p-6">
+      <h4 class="font-semibold text-lg text-[var(--magenta)]">Sofía Rico</h4>
+      <p class="text-gray-600 text-sm">CEO y Estratega Digital</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-6">
+      <h4 class="font-semibold text-lg text-[var(--magenta)]">Alisson Bernabé</h4>
+      <p class="text-gray-600 text-sm">Directora de Producción y Contenido</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMAS Y SOLUCIONES -->
+<section class="py-20 text-center bg-white">
+  <h2 class="text-3xl font-bold text-[var(--magenta)] mb-10">Qué Problemas Resolvemos</h2>
+  <div class="max-w-5xl mx-auto grid gap-10 md:grid-cols-2 px-6 text-left">
+    
+    <div class="bg-[var(--gris)] rounded-2xl shadow-md p-8">
+      <h3 class="text-2xl font-semibold mb-4 text-[var(--magenta)]">Situaciones Frecuentes</h3>
+      <ul class="list-disc list-inside text-base leading-relaxed text-gray-700">
+        <li>Identidades visuales poco definidas.</li>
+        <li>Baja conexión emocional con el público.</li>
+        <li>Redes sociales sin estrategia ni impacto visual.</li>
+        <li>Marcas con poca recordación o posicionamiento.</li>
+      </ul>
+    </div>
+
+    <div class="bg-[var(--gris)] rounded-2xl shadow-md p-8">
+      <h3 class="text-2xl font-semibold mb-4 text-[var(--magenta)]">Nuestro Enfoque</h3>
+      <ul class="list-disc list-inside text-base leading-relaxed text-gray-700">
+        <li>Construcción de identidades auténticas y coherentes.</li>
+        <li>Estrategias visuales alineadas al público objetivo.</li>
+        <li>Contenido creativo que fortalece la conexión emocional.</li>
+        <li>Posicionamiento gradual y sostenible de la marca.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTOR -->
+<section class="py-20 bg-[var(--gris)] text-center">
+  <h2 class="text-3xl font-bold text-[var(--magenta)] mb-6">Nuestro Enfoque</h2>
+  <div class="max-w-4xl mx-auto px-6 text-base md:text-lg leading-relaxed text-gray-700">
+    <p>
+      Nos especializamos en acompañar marcas emergentes y negocios que buscan fortalecer su presencia digital desde una identidad sólida, auténtica y estratégica.
+    </p>
+    <p class="mt-6">
+      Combinamos creatividad, análisis y conexión emocional para posicionar marcas de forma impactante y memorable en el entorno digital.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 text-center bg-white">
+  <div class="max-w-3xl mx-auto rounded-2xl shadow-lg p-10 bg-[var(--gris)]">
+    <h2 class="text-3xl font-bold mb-4 text-[var(--magenta)]">¿Listo para potenciar tu marca?</h2>
+    <p class="text-base md:text-lg mb-6 text-gray-700">
+      Escríbenos y llevemos tu identidad digital a otro nivel con estrategia, creatividad y visión.
+    </p>
+    <a href="contacto.html" class="inline-block bg-[var(--magenta)] hover:bg-[var(--morado)] text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300">
+      Contáctanos
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t py-6 text-center text-gray-500 text-sm">
+  © 2025 Alisof Vision — Diseño Digital & Estrategia Creativa
+</footer>
+
+</body>
+</html>

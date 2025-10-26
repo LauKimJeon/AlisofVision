@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos | Alisof Vision</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --morado: #29235C;
+      --magenta: #B61077;
+      --gris: #fde2ef;
+      --blanco: #FFFFFF;
+    }
+
+    body {
+      background-color: var(--gris);
+      color: var(--morado);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .modal-bg {
+      background-color: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="bg-white shadow-md fixed w-full top-0 z-50">
+  <nav class="container mx-auto flex justify-between items-center p-4">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="LOGO 50 X 50_page-0001.jpg" alt="Logo Alisof Vision" class="h-10 w-auto">
+      <span class="font-semibold text-lg text-[var(--magenta)] hidden sm:inline">Alisof Vision</span>
+    </a>
+    <ul class="hidden md:flex gap-8 font-medium">
+      <li><a href="index.html" class="hover:text-[var(--magenta)]">Inicio</a></li>
+      <li><a href="QuienesSomos.html" class="hover:text-[var(--magenta)]">Nosotros</a></li>
+      <li><a href="servicios.html" class="hover:text-[var(--magenta)]">Servicios</a></li>
+      <li><a href="contacto.html" class="hover:text-[var(--magenta)]">Contacto</a></li>
+    </ul>
+    <button id="menu-btn" class="md:hidden text-[var(--magenta)]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden bg-white md:hidden border-t">
+    <ul class="flex flex-col items-center gap-4 py-4 font-medium">
+      <li><a href="index.html" class="hover:text-[var(--magenta)]">Inicio</a></li>
+      <li><a href="QuienesSomos.html" class="hover:text-[var(--magenta)]">Nosotros</a></li>
+      <li><a href="servicios.html" class="hover:text-[var(--magenta)]">Servicios</a></li>
+      <li><a href="contacto.html" class="hover:text-[var(--magenta)]">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<main>
+  <div class="pt-28"></div>
+
+  <!-- HERO -->
+  <section class="pt-10 pb-16 text-center bg-gradient-to-r from-[var(--morado)] to-[var(--magenta)] text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Contáctanos</h1>
+    <p class="max-w-2xl mx-auto text-lg">Estamos listas para ayudarte a impulsar tu identidad digital</p>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="flex-grow flex items-center justify-center py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-[var(--magenta)] mb-10">Contáctanos</h2>
+
+      <!-- FORMULARIO -->
+      <div class="bg-white rounded-2xl shadow-md p-8 mb-10">
+        <form id="contact-form" class="space-y-6">
+          <div>
+            <label class="block mb-2 font-semibold" for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" 
+                   class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--magenta)]" required>
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold" for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" 
+                   class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--magenta)]" required>
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." 
+                      class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[var(--magenta)]" required></textarea>
+          </div>
+          <button type="submit" 
+                  class="bg-[var(--magenta)] hover:bg-[var(--morado)] text-white font-semibold py-3 px-6 rounded-full transition-colors duration-300">
+            Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDES SOCIALES (RESPONSIVE CARDS) -->
+  <section class="py-20 text-center bg-[var(--gris)]">
+    <h2 class="text-3xl font-bold text-[var(--magenta)] mb-6">Síguenos</h2>
+    <p class="text-lg mb-8 text-gray-700">Conéctate con nosotras y descubre más de nuestro trabajo:</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-4xl mx-auto px-6">
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/alisofvision?igsh=MTVlZ21idW1hdjk3aw%3D%3D&utm_source=qr"
+         target="_blank"
+         class="bg-white rounded-2xl shadow-md flex flex-col items-center justify-center p-6
+                hover:shadow-xl hover:scale-105 transition transform duration-300">
+        <span class="text-5xl mb-3">📸</span>
+        <p class="font-semibold text-[var(--magenta)] text-lg">Instagram</p>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@alisof.vision?_t=ZS-90seJl2j0cy&_r=1"
+         target="_blank"
+         class="bg-white rounded-2xl shadow-md flex flex-col items-center justify-center p-6
+                hover:shadow-xl hover:scale-105 transition transform duration-300">
+        <span class="text-5xl mb-3">🎵</span>
+        <p class="font-semibold text-[var(--magenta)] text-lg">TikTok</p>
+      </a>
+
+      <!-- WhatsApp 1 -->
+      <a href="https://wa.me/573216315447" target="_blank"
+         class="bg-white rounded-2xl shadow-md flex flex-col items-center justify-center p-6
+                hover:shadow-xl hover:scale-105 transition transform duration-300">
+        <span class="text-5xl mb-3">💬</span>
+        <p class="font-semibold text-[var(--magenta)] text-lg">WhatsApp (3216315447)</p>
+      </a>
+
+      <!-- WhatsApp 2 -->
+      <a href="https://wa.me/573224459685" target="_blank"
+         class="bg-white rounded-2xl shadow-md flex flex-col items-center justify-center p-6
+                hover:shadow-xl hover:scale-105 transition transform duration-300">
+        <span class="text-5xl mb-3">💬</span>
+        <p class="font-semibold text-[var(--magenta)] text-lg">WhatsApp (3224459685)</p>
+      </a>
+
+    </div>
+  </section>
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="fixed inset-0 flex items-center justify-center hidden modal-bg z-50">
+  <div class="bg-white rounded-2xl p-8 max-w-sm text-center shadow-lg">
+    <h3 class="text-2xl font-bold text-[var(--magenta)] mb-4">¡Gracias! 🎉</h3>
+    <p>Gracias por ponerte en contacto con nosotros. Serás redirigido al inicio en unos segundos.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t py-6 text-center text-gray-500 text-sm w-full mt-auto">
+  © 2025 Alisof Vision — Diseño Digital & Estrategia Creativa
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  const form = document.getElementById('contact-form');
+  const modal = document.getElementById('modal');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 3000);
+  });
+</script>
+
+</body>
+</html>
